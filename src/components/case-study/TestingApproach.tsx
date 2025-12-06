@@ -1,7 +1,7 @@
 // src/components/case-study/TestingApproach.tsx
 import { motion } from "framer-motion";
 import StaggerSection from "../StaggerSection";
-import { fadeUp, scaleIn } from "../../animations/variants";
+import { fadeUp} from "../../animations/variants";
 
 export default function TestingApproach() {
   const tools = [

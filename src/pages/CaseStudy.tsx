@@ -8,11 +8,8 @@ import ArchitectureSection from "../components/case-study/ArchitectureSection";
 import EngineeringChallengesSection from "../components/case-study/EngineeringChallengesSection";
 import TestingApproach from "../components/case-study/TestingApproach";
 import CaseStudyCTA from "../components/case-study/CaseStudyCTA";
-import { useParams } from "react-router-dom";
 
-// -------------------------
-// HERO SECTION (top banner)
-// -------------------------
+
 function CaseStudyHero() {
   const ref = useRef<HTMLDivElement | null>(null);
   const { scrollYProgress } = useScroll({
@@ -55,9 +52,7 @@ function CaseStudyHero() {
   );
 }
 
-// -------------------------
-// PROBLEM SECTION
-// -------------------------
+
 function ProblemSection() {
   return (
     <StaggerSection>
@@ -77,9 +72,7 @@ function ProblemSection() {
   );
 }
 
-// -------------------------
-// MAIN PAGE EXPORT
-// -------------------------
+
 export default function CaseStudy() {
   return (
     <div className="relative flex min-h-screen w-full flex-col overflow-x-hidden">
