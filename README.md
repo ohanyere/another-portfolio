@@ -1,73 +1,195 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 🚀 Developer Portfolio — React + TypeScript
 
-Currently, two official plugins are available:
+A modern, animated, and highly interactive developer portfolio built with **React**, **TypeScript**, **TailwindCSS**, and **Framer Motion**.  
+This project showcases my experience as a **frontend engineer**, including component architecture, UI animations, reusable design patterns, and testing best practices.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🔗 Live Demo  
+_Add your deployed link here_
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### 🧩 Modular Component Architecture
+- Hero section with animated rotating text  
+- Skills grid powered by Lucide icons  
+- Featured Projects with reusable `ProjectCard`  
+- Fully structured Case Study pages  
+- Header navigation with clean responsive design  
+- Scroll-trigger animations and staggered components  
+- Parallax hero effects  
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### 🎨 Modern UI Animations (Framer Motion)
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- Fade-in  
+- Stagger children  
+- Slide-up transitions  
+- Parallax scrolling  
+- Page transitions  
+- Text cycling animation with fixed layout (no shifting)  
+- Smooth interactive hover effects  
+
+---
+
+### 🧪 Testing & Quality Assurance
+
+Includes automated testing via:
+
+- **Jest**  
+- **React Testing Library**  
+- **Cypress** (optional E2E)
+
+Example test coverage:
+
+- Component render tests  
+- Form validation  
+- API fetch handling  
+- Button interaction tests  
+- Animation presence tests  
+
+---
+
+## 🗂️ Folder Structure
+
+```
+src/
+ ├─ components/
+ │   ├─ Hero/
+ │   ├─ Skills/
+ │   ├─ Header/
+ │   ├─ ProjectCard/
+ │   ├─ CaseStudy/
+ │   └─ animations/
+ │
+ ├─ pages/
+ │   ├─ Home.tsx
+ │   ├─ CaseStudyOne.tsx
+ │   └─ CaseStudyTwo.tsx
+ │
+ ├─ animations/
+ │   ├─ variants.ts
+ │   └─ FadeInWhenVisible.tsx
+ │
+ ├─ assets/
+ └─ styles/
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🛠️ Tech Stack
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### **Frontend**
+- React  
+- TypeScript  
+- TailwindCSS  
+- Framer Motion  
+- Lucide React Icons  
+
+### **Tooling**
+- Vite  
+- ESLint & Prettier  
+- GitHub Actions (optional CI/CD)
+
+### **Testing**
+- Jest  
+- React Testing Library  
+- Cypress  
+
+---
+
+## 🚧 Installation & Setup
+
+```bash
+git clone <repo-url>
+cd portfolio
+npm install
+npm run dev
 ```
+
+Visit:
+
+```
+http://localhost:5173
+```
+
+---
+
+## 🧪 Running Tests
+
+### Unit & Integration Tests
+
+```bash
+npm test
+```
+
+### End-to-End Tests (Optional)
+
+```bash
+npx cypress open
+```
+
+---
+
+## 📖 Case Study Sections
+
+Each project includes a detailed case study page explaining:
+
+- Problem definition  
+- Solution overview  
+- Architecture diagram  
+- Engineering challenges  
+- Testing strategy  
+- Live demo + GitHub repo link  
+
+This demonstrates engineering reasoning and structured problem-solving.
+
+---
+
+## 🧱 Code Quality Principles
+
+This portfolio follows:
+
+- Reusable component patterns  
+- Atomic design inspiration  
+- Smooth, accessible UI  
+- Clean separation of concerns  
+- Performance-aware animations  
+- Type-safe components with interfaces  
+- Accessibility-first HTML structure  
+
+---
+
+## 🌟 Why This Portfolio Stands Out
+
+This portfolio is engineered to demonstrate:
+
+- Strong React + TypeScript expertise  
+- Professional UI/UX judgment  
+- Motion design and micro-interactions  
+- Real-world problem-solving  
+- Testing and maintainability  
+- Clear architectural thinking  
+
+It is built to impress companies like **OpenAI, Stripe, Coinbase, Duolingo**, and other high-quality engineering teams.
+
+---
+
+## 📬 Contact
+
+- **Email:** your-email@example.com  
+- **GitHub:** https://github.com/yourusername  
+- **LinkedIn:** https://linkedin.com/in/yourusername  
+
+---
+
+## 📝 License  
+MIT License  
+Copyright (c) 2025
+
+---
+
