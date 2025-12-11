@@ -82,26 +82,7 @@ export default function TestingSection() {
               <span className="text-green-400">✓</span>{" "}
               <span className="text-gray-400">useLocalStorage.test.tsx:</span> stores and retrieves values correctly
             </p>
-            <p>
-              <span className="text-green-400">✓</span>{" "}
-              <span className="text-gray-400">ProtectedRoute.test.tsx:</span> blocks unauthenticated access
-            </p>
-            <p>
-              <span className="text-green-400">✓</span>{" "}
-              <span className="text-gray-400">Theme.test.tsx:</span> toggles dark mode correctly
-            </p>
-            <p>
-              <span className="text-green-400">✓</span>{" "}
-              <span className="text-gray-400">Accessibility.test.tsx:</span> ensures all images contain alt text
-            </p>
-            <p>
-              <span className="text-green-400">✓</span>{" "}
-              <span className="text-gray-400">Loader.test.tsx:</span> shows skeleton when fetching data
-            </p>
-            <p>
-              <span className="text-green-400">✓</span>{" "}
-              <span className="text-gray-400">Snapshot.test.tsx:</span> UI matches previous snapshot
-            </p>
+            
 
             <p className="text-green-400 mt-2">All tests passed.</p>
           </div>

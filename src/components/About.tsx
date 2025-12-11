@@ -3,34 +3,34 @@ import FadeInWhenVisible from "./FadeInWhenVisible";
 export default function About() {
   return (
     <section className="py-16 sm:py-20 px-4" id="about">
-      <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-center">
-        <FadeInWhenVisible>
-          <div className="w-full max-w-sm mx-auto md:max-w-none">
-            <img
-              className="w-full h-auto rounded-xl object-cover aspect-square shadow-lg"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBgZVhd7UtLhp5rDizrCIya3DtfiZ6fpz-YTnZDbI3FphPgSki1jFEGF2N4gthwWv_kTq0NxsYtE7FAaeGPrsqTxK4MW22umvJKqy9nIB4r1N56nvFjh2shGko9SLnvDHKh9E3uqSi1Z-wZu1FT4iN3EBYnpWGF0zKy97w6Br8i7X_M2VWFcx325w4ajnapMVFQEQmUV-fbjnA4UA_c_a2ZNQjTYN8smV5ASgDp7hcsgBigZYn7F9ZDlH4XEDkqpxKVkR8363xeyOAj"
-              alt="Portrait"
-            />
-          </div>
-        </FadeInWhenVisible>
+     <a href="#about">  <div className="max-w-3xl mx-auto text-center">
 
         <FadeInWhenVisible>
-          <div className="flex flex-col gap-4 text-center md:text-left">
-            <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-gray-900 dark:text-white">
-              About Me
-            </h2>
-            <p className="text-gray-600 dark:text-gray-400 text-base leading-relaxed">
-              I'm a frontend engineer with a deep passion for creating beautiful,
-              functional, and user-centered digital experiences. I specialize in building
-              scalable and maintainable applications using TypeScript and modern frameworks
-              like React and Next.js. My focus is on delivering exceptional UI/UX,
-              ensuring every interface is both intuitive and performant. I'm also
-              fascinated by the potential of AI and am actively exploring ways to
-              integrate intelligent features into user interfaces.
-            </p>
-          </div>
+          <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-gray-900 dark:text-white">
+            About Me
+          </h2>
+
+          <p className="mt-4 text-gray-600 dark:text-gray-400 text-base leading-relaxed">
+            Hi, I'm a frontend engineer who genuinely enjoys building things that feel good to use.  
+            I love taking ideas from simple sketches or concepts and turning them into clean, functional interfaces.
+          </p>
+
+          <p className="mt-4 text-gray-600 dark:text-gray-400 text-base leading-relaxed">
+            I work mainly with 
+            <span className="font-semibold text-gray-900 dark:text-white"> React</span>, 
+            <span className="font-semibold text-gray-900 dark:text-white"> TypeScript</span>, and 
+            <span className="font-semibold text-gray-900 dark:text-white"> Next.js</span>, 
+            and I care a lot about writing code that's easy to understand, maintain, and scale.  
+            Good UI/UX matters to me, so I try to make every interaction feel smooth and intentional.
+          </p>
+
+          <p className="mt-4 text-gray-600 dark:text-gray-400 text-base leading-relaxed">
+            Lately, I’ve been exploring how AI can enhance everyday user experiences  whether that’s making things
+            faster, smarter, or more helpful in the background. It’s exciting to see how much potential there is.
+          </p>
         </FadeInWhenVisible>
-      </div>
+
+      </div></a>
     </section>
   );
 }

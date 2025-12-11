@@ -4,8 +4,9 @@ import { useParams } from "react-router-dom";
 
 export default function CaseStudyCTA() {
     const {id} = useParams()
-    const githubLink = id?.includes("animal") ? "https://github.com/ohanyere/animal-check" : id?.includes("share") ? "https://github.com/ohanyere/share-interview" : ""
-  return (
+    const githubLink = id?.includes("animal") ? "https://github.com/ohanyere/animal-check" : id?.includes("share") ? "https://github.com/ohanyere/share-interview" : id?.includes("graphql") ? "https://github.com/ohanyere/graphql-ecommerce" : id?.includes("monster") ? "https://github.com/ohanyere/monster" : null
+
+  return ( 
     <motion.section
       variants={fadeUp}
       initial="hidden"
