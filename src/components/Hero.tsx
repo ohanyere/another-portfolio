@@ -5,23 +5,23 @@ export default function Hero() {
     <section className="text-center py-20 sm:py-28 md:py-16 px-4">
       <div className="flex flex-col items-center gap-6">
 
-        {/* Badge */}
-        <div className="inline-block rounded-full bg-blue-900/10 dark:bg-blue-400 px-4 py-1.5 text-sm font-medium text-primary dark:text-primary/90">
-          Frontend Engineer
+   
+        <div className="inline-block rounded-full bg-blue-900/10 dark:bg-blue-400 px-4 py-2 text-sm font-medium text-primary dark:text-primary/90">
+          Available for Work
         </div>
 
-        {/* Greeting */}
+    
         <div className="text-2xl font-medium text-black dark:text-white">
           Hello there,
         </div>
 
-        {/* Animated Name Line */}
+      
         <div className="flex items-center justify-center text-3xl sm:text-4xl font-black text-black dark:text-white gap-3">
           <span>I’m</span>
           <TextCycle />
         </div>
 
-        {/* Subtext */}
+       
         <p className="max-w-2xl text-base sm:text-lg font-normal text-gray-600 dark:text-gray-400">
           I’m a full-stack developer who builds functional and efficient web applications using React, Next.js, and TypeScript, focusing on clean code and practical solutions.
         </p>
