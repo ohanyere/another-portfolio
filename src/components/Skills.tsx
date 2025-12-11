@@ -13,7 +13,7 @@ import {
 } from "react-icons/si";
 
 import { FlaskConical } from "lucide-react";
-import { GiLightningFrequency } from "react-icons/gi"; // Zustant icon alternative (nice lightning symbol)
+
 
 type Skill = {
   icon: React.ReactElement;
