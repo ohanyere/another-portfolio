@@ -38,6 +38,7 @@ export default function Hero() {
           <a
             className="flex items-center justify-center rounded-lg h-12 px-6 bg-gray-200 dark:bg-gray-800 text-gray-900 dark:text-white text-base font-bold hover:bg-gray-300 dark:hover:bg-gray-700 transition-colors"
             href="https://drive.google.com/file/d/1bMIoQDGxYK9bIdJjNx-S4lBnosQfDVVw/view"
+            target="_blank"
           >
             Download Resume
           </a>
