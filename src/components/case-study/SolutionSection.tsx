@@ -1,23 +1,13 @@
-// src/components/case-study/SolutionSection.tsx
 import { motion } from "framer-motion";
 import StaggerSection from "../StaggerSection";
 import { fadeUp } from "../../animations/variants";
-
+import { useParams } from "react-router-dom";
+import { SiCheckmk } from "react-icons/si";
+{SiCheckmk}
 export default function SolutionSection() {
-  const features = [
-    {
-      title: "Feature Highlight One",
-      text: "Implemented a real-time data visualization dashboard that reduced data analysis time by 40%.",
-    },
-    {
-      title: "Feature Highlight Two",
-      text: "Developed a responsive and accessible user interface, achieving a 95+ Lighthouse score for accessibility.",
-    },
-    {
-      title: "Feature Highlight Three",
-      text: "Integrated a secure authentication system using modern standards to protect user data and privacy.",
-    },
-  ];
+   const {id} = useParams()
+      const githubLink = id?.includes("animal") ? "https://github.com/ohanyere/animal-check" : id?.includes("share") ? "https://github.com/ohanyere/share-interview" : id?.includes("graphql") ? "https://github.com/ohanyere/graphql-ecommerce" : id?.includes("monster") ? "https://github.com/ohanyere/monster" : null
+  
 
   return (
     <StaggerSection>
@@ -27,23 +17,13 @@ export default function SolutionSection() {
         </h2>
 
         <div className="bg-content-light dark:bg-content-dark p-6 rounded-xl shadow-md border border-border-light dark:border-border-dark">
-          <ul className="space-y-4">
-            {features.map(({ title, text }) => (
-              <motion.li
-                key={title}
-                variants={fadeUp}
-                className="flex items-start gap-4"
-              >
-                <span className="material-symbols-outlined text-primary mt-1">
-                  check_circle
-                </span>
-
-                <p className="text-text-muted-light dark:text-text-muted-dark text-base md:text-lg leading-relaxed">
-                  <strong>{title}:</strong> {text}
-                </p>
-              </motion.li>
-            ))}
-          </ul>
+          {
+            githubLink?.includes("animal") ? (<span>
+              AnimalCheck provides an instant, AI-powered diagnosis system that allows farmers to upload images, describe symptoms, or send voice notes. The platform analyzes the input using advanced AI models and returns likely diseases along with treatment recommendations and prevention guidance. With multilingual support and 24/7 availability, AnimalCheck gives farmers an affordable, accessible, and fast way to protect their livestock and income.
+            </span>) : (<span>
+              PastWhiz AI solves this by allowing students to upload past questions, which the platform automatically processes and generates accurate answers with detailed explanations using AI models. It also organizes these questions into a structured, searchable database, helping students study efficiently by filtering questions by subject, topic, or year. This turns exam preparation into a faster, more effective, and more meaningful learning experience.
+            </span>)
+          }
         </div>
       </motion.section>
     </StaggerSection>
