@@ -5,24 +5,20 @@ export default function Hero() {
     <section className="text-center py-20 sm:py-28 md:py-16 px-4">
       <div className="flex flex-col items-center gap-6">
 
-   
-        <div className="inline-block rounded-full bg-blue-900/10 dark:bg-blue-400 px-4 py-2 text-sm font-medium text-primary dark:text-primary/90">
+        <div className="inline-block rounded-full bg-blue-900/10 px-4 py-2 text-sm font-medium text-primary">
           Available for Work
         </div>
 
-    
-        <div className="text-2xl font-medium text-black dark:text-white">
+        <div className="text-2xl font-medium text-black">
           Hello there,
         </div>
 
-      
-        <div className="flex items-center justify-center text-3xl sm:text-4xl font-black text-black dark:text-white gap-3">
+        <div className="flex items-center justify-center text-3xl sm:text-4xl font-black text-black gap-3">
           <span>I’m</span>
           <TextCycle />
         </div>
 
-       
-        <p className="max-w-2xl text-base sm:text-lg font-normal text-gray-600 dark:text-gray-400">
+        <p className="max-w-2xl text-base sm:text-lg font-normal text-gray-600">
           I’m a full-stack developer who builds functional and efficient web applications using React, Next.js, and TypeScript, focusing on clean code and practical solutions.
         </p>
 
@@ -36,7 +32,7 @@ export default function Hero() {
           </a>
 
           <a
-            className="flex items-center justify-center rounded-lg h-12 px-6 bg-gray-200 dark:bg-gray-800 text-gray-900 dark:text-white text-base font-bold hover:bg-gray-300 dark:hover:bg-gray-700 transition-colors"
+            className="flex items-center justify-center rounded-lg h-12 px-6 bg-gray-200 text-gray-900 text-base font-bold hover:bg-gray-300 transition-colors"
             href="https://drive.google.com/file/d/1bMIoQDGxYK9bIdJjNx-S4lBnosQfDVVw/view"
             target="_blank"
           >
