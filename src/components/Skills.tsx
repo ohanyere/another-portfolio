@@ -22,42 +22,42 @@ type Skill = {
 
 const skills: Skill[] = [
   {
-    icon: <SiReact size={28} className="text-primary" />,
+    icon: <SiReact size={28} className="text-black" />,
     title: "React",
     description: "Building dynamic, reusable, component-based user interfaces.",
   },
   {
-    icon: <SiNextdotjs size={28} className="text-primary" />,
+    icon: <SiNextdotjs size={28} className="text-black" />,
     title: "Next.js",
     description: "Creating fast, SEO-friendly, full-stack applications.",
   },
   {
-    icon: <SiTypescript size={28} className="text-primary" />,
+    icon: <SiTypescript size={28} className="text-black" />,
     title: "TypeScript",
     description: "Writing type-safe, scalable, and maintainable codebases.",
   },
   {
-    icon: <SiTailwindcss size={28} className="text-primary" />,
+    icon: <SiTailwindcss size={28} className="text-black" />,
     title: "Tailwind CSS",
     description: "Crafting modern UI with a fast utility-first workflow.",
   },
   {
-    icon: <SiFirebase size={28} className="text-primary" />,
+    icon: <SiFirebase size={28} className="text-black" />,
     title: "Firebase",
     description: "Authentication, storage, hosting, and real-time databases.",
   },
   {
-    icon: <SiRedux size={28} className="text-primary" />,
+    icon: <SiRedux size={28} className="text-black" />,
     title: "State Management",
     description: "Zustand for lightweight stores and Redux Toolkit for scalable global state.",
   },
   {
-    icon: <SiFramer size={28} className="text-primary" />,
+    icon: <SiFramer size={28} className="text-black" />,
     title: "Framer Motion",
     description: "Smooth, interactive animations for modern user experiences.",
   },
   {
-    icon: <FlaskConical size={28} className="text-primary" />,
+    icon: <FlaskConical size={28} className="text-black" />,
     title: "Testing",
     description: "Ensuring quality with Jest, RTL, Vitest & Cypress.",
   },
@@ -97,8 +97,8 @@ export default function Skills() {
       <StaggerSection>
         <motion.h4
           variants={fadeUp}
-          className="text-center text-sm font-bold uppercase tracking-wider 
-                     text-gray-500 mb-10"
+          className="text-center text-lg font-bold uppercase tracking-wider 
+                     text-gray-700 mb-10"
         >
           Skills &amp; Tools
         </motion.h4>
