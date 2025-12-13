@@ -14,7 +14,6 @@ import {
 
 import { FlaskConical } from "lucide-react";
 
-
 type Skill = {
   icon: React.ReactElement;
   title: string;
@@ -47,14 +46,11 @@ const skills: Skill[] = [
     title: "Firebase",
     description: "Authentication, storage, hosting, and real-time databases.",
   },
-
-  
   {
     icon: <SiRedux size={28} className="text-primary" />,
     title: "State Management",
     description: "Zustand for lightweight stores and Redux Toolkit for scalable global state.",
   },
-
   {
     icon: <SiFramer size={28} className="text-primary" />,
     title: "Framer Motion",
@@ -67,16 +63,14 @@ const skills: Skill[] = [
   },
 ];
 
-
-
 function SkillCard({ icon, title, description }: Skill) {
   return (
     <div
       className="
         flex flex-col gap-3 
         rounded-xl 
-        border border-gray-200 dark:border-gray-800
-        bg-white/50 dark:bg-gray-900/50
+        border border-gray-200
+        bg-white/50
         p-5 shadow-sm
         transition-all 
         duration-300
@@ -86,18 +80,16 @@ function SkillCard({ icon, title, description }: Skill) {
       <div className="text-primary">{icon}</div>
 
       <div className="flex flex-col">
-        <h3 className="text-base font-bold text-gray-900 dark:text-white">
+        <h3 className="text-base font-bold text-gray-900">
           {title}
         </h3>
-        <p className="text-sm text-gray-600 dark:text-gray-400">
+        <p className="text-sm text-gray-600">
           {description}
         </p>
       </div>
     </div>
   );
 }
-
-
 
 export default function Skills() {
   return (
@@ -106,7 +98,7 @@ export default function Skills() {
         <motion.h4
           variants={fadeUp}
           className="text-center text-sm font-bold uppercase tracking-wider 
-                     text-gray-500 dark:text-gray-400 mb-10"
+                     text-gray-500 mb-10"
         >
           Skills &amp; Tools
         </motion.h4>
