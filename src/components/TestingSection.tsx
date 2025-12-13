@@ -5,10 +5,10 @@ export default function TestingSection() {
     <section className="py-16 sm:py-20 px-4">
       <FadeInWhenVisible>
         <div className="text-center mb-12">
-          <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-gray-900 dark:text-white">
+          <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-gray-900">
             Testing &amp; Quality Assurance
           </h2>
-          <p className="mt-3 max-w-2xl mx-auto text-gray-600 dark:text-gray-400">
+          <p className="mt-3 max-w-2xl mx-auto text-gray-600">
             Committed to shipping high-quality, reliable code through comprehensive testing strategies.
           </p>
         </div>
@@ -33,21 +33,19 @@ export default function TestingSection() {
             ].map((item) => (
               <div
                 key={item.title}
-                className="flex flex-col gap-2 p-5 rounded-xl border border-gray-200 dark:border-gray-800 bg-white/50 dark:bg-gray-900/50 shadow-sm"
+                className="flex flex-col gap-2 p-5 rounded-xl border border-gray-200 bg-white/50 shadow-sm"
               >
-                <h4 className="font-bold text-gray-900 dark:text-white">{item.title}</h4>
-                <p className="text-sm text-gray-600 dark:text-gray-400">{item.desc}</p>
+                <h4 className="font-bold text-gray-900">{item.title}</h4>
+                <p className="text-sm text-gray-600">{item.desc}</p>
               </div>
             ))}
           </div>
         </FadeInWhenVisible>
 
-        {/* TERMINAL OUTPUT WITH EXPANDED TESTS */}
         <FadeInWhenVisible>
-          <div className="p-4 rounded-xl border border-gray-200 dark:border-gray-800 bg-gray-900 text-white font-mono text-sm shadow-md">
+          <div className="p-4 rounded-xl border border-gray-200 bg-gray-900 text-white font-mono text-sm shadow-md">
             <p className="text-gray-400">&gt; running tests...</p>
 
-            {/* ---- ORIGINAL TESTS ---- */}
             <p>
               <span className="text-green-400">✓</span>{" "}
               <span className="text-gray-400">Button.test.tsx:</span> renders the main button correctly
@@ -61,7 +59,6 @@ export default function TestingSection() {
               <span className="text-gray-400">Api.test.tsx:</span> fetches and displays data from the API
             </p>
 
-            {/* ---- NEW ADDED TESTS ---- */}
             <p>
               <span className="text-green-400">✓</span>{" "}
               <span className="text-gray-400">Navbar.test.tsx:</span> renders navigation links correctly
@@ -82,7 +79,6 @@ export default function TestingSection() {
               <span className="text-green-400">✓</span>{" "}
               <span className="text-gray-400">useLocalStorage.test.tsx:</span> stores and retrieves values correctly
             </p>
-            
 
             <p className="text-green-400 mt-2">All tests passed.</p>
           </div>
