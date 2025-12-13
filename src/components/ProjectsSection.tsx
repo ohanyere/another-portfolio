@@ -9,7 +9,7 @@ export default function ProjectsSection() {
       <StaggerSection>
         <motion.h2
           variants={fadeUp}
-          className="text-2xl sm:text-3xl font-bold leading-tight tracking-tight text-gray-900 dark:text-white mb-12 text-center"
+          className="text-2xl sm:text-3xl font-bold leading-tight tracking-tight text-gray-900 mb-12 text-center"
         >
           Projects Highlight
         </motion.h2>
