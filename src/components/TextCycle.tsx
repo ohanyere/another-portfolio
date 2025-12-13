@@ -26,7 +26,7 @@ export default function TextCycle() {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -10 }}
           transition={{ duration: 0.6 }}
-          className="text-3xl sm:text-4xl md:text-5xl font-black text-gray-900 dark:text-white text-center"
+          className="text-3xl sm:text-4xl md:text-5xl font-black text-gray-900 text-center"
         >
           {sentences[index]}
         </motion.h1>
