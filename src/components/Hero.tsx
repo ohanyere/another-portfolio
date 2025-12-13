@@ -5,7 +5,7 @@ export default function Hero() {
     <section className="text-center py-20 sm:py-28 md:py-16 px-4">
       <div className="flex flex-col items-center gap-6">
 
-        <div className="inline-block rounded-full bg-blue-900/10 px-4 py-2 text-sm font-medium text-primary">
+        <div className="inline-block rounded-full bg-blue-900/10 px-4 py-2 text-sm font-medium ">
           Available for Work
         </div>
 
