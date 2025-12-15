@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import StaggerSection from "../StaggerSection";
 import { fadeUp } from "../../animations/variants";
 import { useParams } from "react-router-dom";
-import { SiCheckmk } from "react-icons/si";
+
 
 export default function SolutionSection() {
   const { id } = useParams();
