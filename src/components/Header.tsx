@@ -25,13 +25,13 @@ export default function Header() {
       {!isCaseStudy ? (
         <div className="hidden md:flex flex-1 justify-end items-center gap-8">
           <nav className="flex items-center gap-9">
-            <a className="text-sm font-medium hover:text-primary" href="#projects">
+            <a className="text-sm font-medium hover:text-black" href="#projects">
               Projects
             </a>
-            <a className="text-sm font-medium hover:text-primary" href="#about">
+            <a className="text-sm font-medium hover:text-black" href="#about">
               About
             </a>
-            <a className="text-sm font-medium hover:text-primary" href="#contact">
+            <a className="text-sm font-medium hover:text-black" href="#contact">
               Contact
             </a>
           </nav>
@@ -39,13 +39,13 @@ export default function Header() {
       ) : (
         <div className="hidden sm:flex flex-1 justify-end gap-4 sm:gap-8">
           <div className="flex items-center gap-6 sm:gap-9">
-            <Link className="text-sm font-medium hover:text-primary" to="/">
+            <Link className="text-sm font-medium hover:text-black" to="/">
               Work
             </Link>
-            <a className="text-sm font-medium hover:text-primary" href="/#about">
+            <a className="text-sm font-medium hover:text-black" href="/#about">
               About
             </a>
-            <a className="text-sm font-medium hover:text-primary" href="/#contact">
+            <a className="text-sm font-medium hover:text-black" href="/#contact">
               Contact
             </a>
           </div>
