@@ -23,9 +23,11 @@ export default function CaseStudyCTA() {
       viewport={{ once: true }}
       className="text-center mt-20 py-10 border-t border-border-light"
     >
-      <h2 className="text-2xl md:text-3xl font-bold">View Project</h2>
+      <h2 className="text-2xl md:text-3xl font-bold text-black">
+        View Project
+      </h2>
 
-      <p className="text-text-muted-light text-base md:text-lg mt-3 mb-8 max-w-xl mx-auto">
+      <p className="text-black text-base md:text-lg mt-3 mb-8 max-w-xl mx-auto">
         Explore the live application or dive into the source code to see how it was built.
       </p>
 
@@ -44,7 +46,7 @@ export default function CaseStudyCTA() {
           href={`${githubLink}`}
           whileHover={{ scale: 1.03 }}
           whileTap={{ scale: 0.97 }}
-          className="flex items-center gap-2 h-12 px-6 border border-border-light rounded-lg font-bold"
+          className="flex items-center gap-2 h-12 px-6 border border-border-light rounded-lg font-bold text-black hover:text-gray-600"
         >
           <svg className="h-5 w-5" fill="currentColor">
             <path d="M12 2C6.477 2 2 ..."></path>

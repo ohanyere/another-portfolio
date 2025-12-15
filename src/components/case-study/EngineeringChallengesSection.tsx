@@ -24,7 +24,7 @@ export default function EngineeringChallengesSection() {
   return (
     <StaggerSection>
       <motion.section variants={fadeUp} className="mt-20">
-        <h2 className="text-2xl md:text-3xl font-bold px-4 pb-4">
+        <h2 className="text-2xl md:text-3xl font-bold px-4 pb-4 text-black">
           Engineering Challenges
         </h2>
 
@@ -39,7 +39,7 @@ export default function EngineeringChallengesSection() {
                 <span className="flex-shrink-0 flex items-center justify-center size-8 bg-primary/10 text-primary font-bold rounded-full">
                   {c.id}
                 </span>
-                <p className="text-text-muted-light text-base md:text-lg leading-relaxed">
+                <p className="text-black text-base md:text-lg leading-relaxed">
                   <strong>{c.title}:</strong> {c.text}
                 </p>
               </motion.li>
