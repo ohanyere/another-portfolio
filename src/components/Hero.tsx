@@ -2,7 +2,7 @@ import TextCycle from "../components/TextCycle";
 
 export default function Hero() {
   return (
-    <section className="text-center py-20 sm:py-28 md:py-16 px-4">
+    <section className="text-center py-20 sm:py-28 md:py-24 px-4">
       <div className="flex flex-col items-center gap-6">
 
         <div className="inline-block rounded-full bg-blue-900/10 px-4 py-2 text-sm font-medium text-black/70">
