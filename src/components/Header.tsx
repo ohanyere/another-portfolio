@@ -24,28 +24,28 @@ export default function Header() {
 
       {!isCaseStudy ? (
         <div className="hidden md:flex flex-1 justify-end items-center gap-8">
-          <nav className="flex items-center gap-9">
-            <a className="text-sm font-medium hover:text-black" href="#projects">
+          <nav className="flex items-center gap-9 text-black">
+            <a className="text-sm font-medium hover:text-gray-500" href="#projects">
               Projects
             </a>
-            <a className="text-sm font-medium hover:text-black" href="#about">
+            <a className="text-sm font-medium hover:text-gray-500" href="#about">
               About
             </a>
-            <a className="text-sm font-medium hover:text-black" href="#contact">
+            <a className="text-sm font-medium hover:text-gray-500" href="#contact">
               Contact
             </a>
           </nav>
         </div>
       ) : (
         <div className="hidden sm:flex flex-1 justify-end gap-4 sm:gap-8">
-          <div className="flex items-center gap-6 sm:gap-9">
-            <Link className="text-sm font-medium hover:text-black" to="/">
+          <div className="flex items-center gap-6 sm:gap-9 text-black">
+            <Link className="text-sm font-medium hover:text-gray-500" to="/">
               Work
             </Link>
-            <a className="text-sm font-medium hover:text-black" href="/#about">
+            <a className="text-sm font-medium hover:text-gray-500" href="/#about">
               About
             </a>
-            <a className="text-sm font-medium hover:text-black" href="/#contact">
+            <a className="text-sm font-medium hover:text-gray-500" href="/#contact">
               Contact
             </a>
           </div>
