@@ -1,4 +1,3 @@
-// src/components/case-study/EngineeringChallengesSection.tsx
 import { motion } from "framer-motion";
 import StaggerSection from "../StaggerSection";
 import { fadeUp } from "../../animations/variants";
@@ -29,14 +28,18 @@ export default function EngineeringChallengesSection() {
           Engineering Challenges
         </h2>
 
-        <div className="bg-content-light dark:bg-content-dark p-6 rounded-xl shadow-md border border-border-light dark:border-border-dark">
+        <div className="bg-content-light p-6 rounded-xl shadow-md border border-border-light">
           <ol className="space-y-5">
             {challenges.map((c) => (
-              <motion.li key={c.id} variants={fadeUp} className="flex items-start gap-4">
-                <span className="flex-shrink-0 flex items-center justify-center size-8 bg-primary/10 text-primary dark:bg-primary/20 font-bold rounded-full">
+              <motion.li
+                key={c.id}
+                variants={fadeUp}
+                className="flex items-start gap-4"
+              >
+                <span className="flex-shrink-0 flex items-center justify-center size-8 bg-primary/10 text-primary font-bold rounded-full">
                   {c.id}
                 </span>
-                <p className="text-text-muted-light dark:text-text-muted-dark text-base md:text-lg leading-relaxed">
+                <p className="text-text-muted-light text-base md:text-lg leading-relaxed">
                   <strong>{c.title}:</strong> {c.text}
                 </p>
               </motion.li>
