@@ -7,7 +7,7 @@ export default function ArchitectureSection() {
   return (
     <StaggerSection>
       <motion.section variants={fadeUp} className="mt-20">
-        <h2 className="text-2xl md:text-3xl font-bold tracking-tight px-4 pb-4">
+        <h2 className="text-2xl md:text-3xl font-bold tracking-tight px-4 pb-4 text-black">
           Architecture Diagram
         </h2>
 
