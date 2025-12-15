@@ -1,7 +1,6 @@
-// src/components/case-study/TestingApproach.tsx
 import { motion } from "framer-motion";
 import StaggerSection from "../StaggerSection";
-import { fadeUp} from "../../animations/variants";
+import { fadeUp } from "../../animations/variants";
 
 export default function TestingApproach() {
   const tools = [
@@ -26,7 +25,7 @@ export default function TestingApproach() {
           Testing Approach
         </h2>
 
-        <p className="text-text-muted-light dark:text-text-muted-dark text-base md:text-lg leading-relaxed mb-6 px-4">
+        <p className="text-text-muted-light text-base md:text-lg leading-relaxed mb-6 px-4">
           A comprehensive testing strategy was employed, combining unit, integration,
           and end-to-end tests to ensure application stability and reliability.
         </p>
@@ -36,7 +35,7 @@ export default function TestingApproach() {
             <motion.div
               key={tool.name}
               variants={fadeUp}
-              className="flex items-center gap-2 bg-background-light dark:bg-background-dark py-2 px-4 rounded-full border border-border-light dark:border-border-dark"
+              className="flex items-center gap-2 bg-background-light py-2 px-4 rounded-full border border-border-light"
             >
               <img src={tool.logo} alt={tool.name} className="h-5 w-5" />
               <span className="text-sm font-medium">{tool.name}</span>
