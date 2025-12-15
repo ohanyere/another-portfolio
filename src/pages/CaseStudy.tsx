@@ -78,11 +78,11 @@ function ProblemSection() {
   return (
     <StaggerSection>
       <motion.section variants={fadeUp} className="mt-12 md:mt-20">
-        <h2 className="text-2xl md:text-3xl font-bold leading-tight tracking-tight px-4 pb-4">
+        <h2 className="text-2xl md:text-3xl font-bold leading-tight tracking-tight px-4 pb-4 text-black">
           The Problem
         </h2>
-        <div className="bg-content-light dark:bg-content-dark p-6 rounded-xl shadow-md border border-border-light dark:border-border-dark">
-          <p className="text-text-muted-light dark:text-text-muted-dark text-base md:text-lg leading-relaxed">
+        <div className=" p-6 rounded-xl shadow-md border border-border-light ">
+          <p className="text-black text-base md:text-lg leading-relaxed">
             {
               githubLink?.includes("animal") ? ("Farmers often struggle to identify livestock diseases early because access to veterinarians is limited, costly, or unavailable. This leads to delayed diagnosis, preventable animal deaths, financial loss, and widespread disease outbreaks, especially in rural communities. Many farmers also lack the technical vocabulary to describe symptoms accurately, making it even harder to get timely help.") : ("Students preparing for exams often struggle because past questions are scattered across PDFs, social media groups, and multiple sources, and most do not come with answers or explanations. This makes studying inefficient and forces students to spend more time searching for resources than actually learning. Without clear explanations, many students memorize answers without understanding the concepts behind them.")
 
