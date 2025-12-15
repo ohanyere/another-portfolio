@@ -36,7 +36,7 @@ export default function EngineeringChallengesSection() {
                 variants={fadeUp}
                 className="flex items-start gap-4"
               >
-                <span className="flex-shrink-0 flex items-center justify-center size-8 bg-primary/10 text-primary font-bold rounded-full">
+                <span className="flex-shrink-0 flex items-center justify-center size-8  text-primary font-bold rounded-full">
                   {c.id}
                 </span>
                 <p className="text-black text-base md:text-lg leading-relaxed">
