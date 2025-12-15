@@ -5,8 +5,8 @@ export default function Header() {
   const isCaseStudy = location.pathname === "/case-study/";
 
   return (
-    <header className="flex items-center justify-between whitespace-nowrap border-b border-solid border-gray-200 dark:border-gray-800 px-4 sm:px-10 py-3">
-      <div className="flex items-center gap-4 text-[#0d121b] dark:text-white">
+    <header className="flex items-center justify-between whitespace-nowrap border-b border-solid border-gray-200 px-4 sm:px-10 py-3">
+      <div className="flex items-center gap-4 text-[#0d121b]">
         <div className="size-8">
           <svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -25,17 +25,16 @@ export default function Header() {
       {!isCaseStudy ? (
         <div className="hidden md:flex flex-1 justify-end items-center gap-8">
           <nav className="flex items-center gap-9">
-            <a className="text-sm font-medium hover:text-primary dark:hover:text-primary" href="#projects">
+            <a className="text-sm font-medium hover:text-primary" href="#projects">
               Projects
             </a>
-            <a className="text-sm font-medium hover:text-primary dark:hover:text-primary" href="#about">
+            <a className="text-sm font-medium hover:text-primary" href="#about">
               About
             </a>
-            <a className="text-sm font-medium hover:text-primary dark:hover:text-primary" href="#contact">
+            <a className="text-sm font-medium hover:text-primary" href="#contact">
               Contact
             </a>
           </nav>
-          
         </div>
       ) : (
         <div className="hidden sm:flex flex-1 justify-end gap-4 sm:gap-8">
