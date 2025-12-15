@@ -3,20 +3,29 @@ import { fadeUp } from "../../animations/variants";
 import { useParams } from "react-router-dom";
 
 export default function CaseStudyCTA() {
-    const {id} = useParams()
-    const githubLink = id?.includes("animal") ? "https://github.com/ohanyere/animal-check" : id?.includes("share") ? "https://github.com/ohanyere/share-interview" : id?.includes("graphql") ? "https://github.com/ohanyere/graphql-ecommerce" : id?.includes("monster") ? "https://github.com/ohanyere/monster" : null
+  const { id } = useParams();
 
-  return ( 
+  const githubLink = id?.includes("animal")
+    ? "https://github.com/ohanyere/animal-check"
+    : id?.includes("share")
+    ? "https://github.com/ohanyere/share-interview"
+    : id?.includes("graphql")
+    ? "https://github.com/ohanyere/graphql-ecommerce"
+    : id?.includes("monster")
+    ? "https://github.com/ohanyere/monster"
+    : null;
+
+  return (
     <motion.section
       variants={fadeUp}
       initial="hidden"
       whileInView="show"
       viewport={{ once: true }}
-      className="text-center mt-20 py-10 border-t border-border-light dark:border-border-dark"
+      className="text-center mt-20 py-10 border-t border-border-light"
     >
       <h2 className="text-2xl md:text-3xl font-bold">View Project</h2>
 
-      <p className="text-text-muted-light dark:text-text-muted-dark text-base md:text-lg mt-3 mb-8 max-w-xl mx-auto">
+      <p className="text-text-muted-light text-base md:text-lg mt-3 mb-8 max-w-xl mx-auto">
         Explore the live application or dive into the source code to see how it was built.
       </p>
 
@@ -35,7 +44,7 @@ export default function CaseStudyCTA() {
           href={`${githubLink}`}
           whileHover={{ scale: 1.03 }}
           whileTap={{ scale: 0.97 }}
-          className="flex items-center gap-2 h-12 px-6 border border-border-light dark:border-border-dark rounded-lg font-bold"
+          className="flex items-center gap-2 h-12 px-6 border border-border-light rounded-lg font-bold"
         >
           <svg className="h-5 w-5" fill="currentColor">
             <path d="M12 2C6.477 2 2 ..."></path>
