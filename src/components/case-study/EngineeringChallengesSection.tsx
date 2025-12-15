@@ -28,7 +28,7 @@ export default function EngineeringChallengesSection() {
           Engineering Challenges
         </h2>
 
-        <div className="bg-content-light p-6 rounded-xl shadow-md border border-border-light">
+        <div className=" p-6 rounded-xl shadow-md border border-border-light">
           <ol className="space-y-5">
             {challenges.map((c) => (
               <motion.li
@@ -36,7 +36,7 @@ export default function EngineeringChallengesSection() {
                 variants={fadeUp}
                 className="flex items-start gap-4"
               >
-                <span className="flex-shrink-0 flex items-center justify-center size-8  text-primary font-bold rounded-full">
+                <span className="flex-shrink-0 flex items-center justify-center size-8  text-balck font-bold rounded-full">
                   {c.id}
                 </span>
                 <p className="text-black text-base md:text-lg leading-relaxed">
