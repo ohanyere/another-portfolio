@@ -20,7 +20,7 @@ export default function TestingApproach() {
 
   return (
     <StaggerSection>
-      <motion.section variants={fadeUp} className="mt-20">
+      <motion.section variants={fadeUp} className="mt-20 text-black">
         <h2 className="text-2xl md:text-3xl font-bold px-4 pb-4">
           Testing Approach
         </h2>
@@ -35,7 +35,7 @@ export default function TestingApproach() {
             <motion.div
               key={tool.name}
               variants={fadeUp}
-              className="flex items-center gap-2 bg-background-light py-2 px-4 rounded-full border border-border-light"
+              className="flex items-center gap-2 bg-background-light text-black py-2 px-4 rounded-full border border-border-light"
             >
               <img src={tool.logo} alt={tool.name} className="h-5 w-5" />
               <span className="text-sm font-medium">{tool.name}</span>
