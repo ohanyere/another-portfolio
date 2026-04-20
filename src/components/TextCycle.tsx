@@ -1,9 +1,10 @@
-import { motion, AnimatePresence } from "framer-motion";
-import { useState, useEffect } from "react";
+import { AnimatePresence, motion } from "framer-motion";
+import { useEffect, useState } from "react";
 
-const sentences = [
-  "Full-Stack Dev",
-  "Ohanyere Francis."
+const titles = [
+  "Platform Engineer",
+  "Backend Engineer",
+  "Cloud-Native Engineer",
 ];
 
 export default function TextCycle() {
@@ -11,24 +12,24 @@ export default function TextCycle() {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setIndex((prev) => (prev + 1) % sentences.length);
-    }, 3000); 
+      setIndex((prev) => (prev + 1) % titles.length);
+    }, 3000);
 
     return () => clearInterval(interval);
   }, []);
 
   return (
-    <div className="relative h-20 flex items-center justify-center">
+    <div className="relative flex h-16 items-center justify-center">
       <AnimatePresence mode="wait">
         <motion.h1
           key={index}
-          initial={{ opacity: 0, y: 10 }}
+          initial={{ opacity: 0, y: 8 }}
           animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: -10 }}
-          transition={{ duration: 0.6 }}
-          className="text-3xl sm:text-4xl md:text-5xl font-black text-gray-900 text-center"
+          exit={{ opacity: 0, y: -8 }}
+          transition={{ duration: 0.35 }}
+          className="text-center text-3xl font-black text-gray-900 sm:text-4xl md:text-5xl"
         >
-          {sentences[index]}
+          {titles[index]}
         </motion.h1>
       </AnimatePresence>
     </div>

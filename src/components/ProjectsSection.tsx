@@ -1,80 +1,64 @@
-import { motion } from "framer-motion";
-import StaggerSection from "./StaggerSection";
-import ProjectCard from "./ProjectCard";
-import { fadeUp } from "../animations/variants";
+import ProjectCard, { type ProjectCardProps } from "./ProjectCard";
+
+const projects: ProjectCardProps[] = [
+  {
+    title: "Kubernetes Cost Guard",
+    group: "Platform & Infrastructure",
+    description:
+      "Kubernetes workload analysis service that inspects deployments, extracts CPU, memory, and replica configuration, compares declared requests against observed usage patterns, applies namespace and replica guardrails, supports dry-run validation, and persists recommendation history in PostgreSQL for traceability.",
+    stack: ["Go", "Kubernetes", "PostgreSQL", "Metrics Server", "Slack", "Backstage"],
+  },
+  {
+    title: "Scholarship Platform MVP",
+    group: "Cloud-Native Delivery",
+    description:
+      "Containerized backend platform on Kubernetes with independently deployable workloads, GitOps synchronization through ArgoCD, CI/CD pipelines for image builds and deployments, Terraform-managed AWS infrastructure, Kubernetes Services and Ingress, and a Karpenter-ready scaling model.",
+    stack: [
+      "Go",
+      "PostgreSQL",
+      "Redis",
+      "Kubernetes",
+      "Helm",
+      "Terraform",
+      "AWS",
+      "ArgoCD",
+      "GitHub Actions",
+    ],
+    githubUrl: "https://github.com/ohanyere/scholarship-mvp",
+  },
+  {
+    title: "GraphQL E-Commerce Store",
+    group: "Backend Systems",
+    description:
+      "Commerce backend-facing application focused on GraphQL data access, authentication-aware flows, product querying, cart behavior, API boundaries, and payment-readiness tradeoffs.",
+    stack: ["TypeScript", "GraphQL", "Apollo Client", "Auth", "API Design"],
+    githubUrl: "https://github.com/ohanyere/graphql-ecommerce",
+    liveUrl: "https://graphql-ecommerce-phi.vercel.app/",
+  },
+];
 
 export default function ProjectsSection() {
   return (
-    <section className="py-16 sm:py-20 px-4" id="projects">
-      <StaggerSection>
-        <motion.h2
-          variants={fadeUp}
-          className="text-2xl sm:text-3xl font-bold leading-tight tracking-tight text-gray-900 mb-12 text-center"
-        >
-          Projects Highlight
-        </motion.h2>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-10">
-          
-          <ProjectCard
-            title="Livestock Diagnosis AI"
-            link="animal-check.vercel.app/"
-            description="Snap a picture of livestock and get instant AI-powered disease detection with prevention tips."
-            tags={[
-              "TypeScript",
-              "React",
-              "Firebase",
-              "React Query",
-              "Cypress",
-              "React Testing Library",
-              "Gemini AI",
-              "Tailwindcss"
-            ]}
-          />
-
-          <ProjectCard
-            title="Past Quiz AI"
-            link="share-interview.vercel.app/"
-            description="Upload, view, and practice exam questions with AI-powered hints to help students study smarter."
-            tags={[
-              "TypeScript",
-              "React",
-              "Firebase",
-              "React Query",
-              "Gemini AI",
-              "Tailwindcss",
-              "Cypress",
-              "React Testing Library"
-            ]}
-          />
-
-          <ProjectCard
-            title="GraphQL E-Commerce Store"
-            link="graphql-ecommerce-phi.vercel.app/"
-            description="A modern e-commerce store with GraphQL, secure auth, product filters, cart system, and future Stripe integration."
-            tags={[
-              "TypeScript",
-              "React",
-              "Apollo Client",
-              "GraphQL",
-              "Styled Components",
-            ]}
-          />
-
-          <ProjectCard
-            title="Monster Rolodex"
-            link="monster-rolodex"
-            description="A fun monster search application where users filter and interact with monster data."
-            tags={[
-              "TypeScript",
-              "React",
-              "Redux",
-              "CSS",
-            ]}
-          />
-
+    <section className="px-4 py-16 sm:py-20" id="projects">
+      <div className="mx-auto max-w-5xl">
+        <div className="mb-10 max-w-3xl">
+          <p className="text-sm font-bold uppercase tracking-wider text-gray-500">
+            Selected Engineering Work
+          </p>
+          <h2 className="mt-2 text-2xl font-bold leading-tight tracking-tight text-gray-900 sm:text-3xl">
+            Platform, backend, and cloud-native projects
+          </h2>
+          <p className="mt-3 text-base leading-relaxed text-gray-600">
+            A focused set of projects that support infrastructure automation, backend workflows, deployment systems, and reliability-oriented engineering.
+          </p>
         </div>
-      </StaggerSection>
+
+        <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
+          {projects.map((project) => (
+            <ProjectCard key={project.title} {...project} />
+          ))}
+        </div>
+      </div>
     </section>
   );
 }

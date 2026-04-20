@@ -5,6 +5,7 @@ import ProjectsSection from "../components/ProjectsSection";
 import Skills from "../components/Skills";
 import Hero from "../components/Hero";
 import Header from "../components/Header";
+import PlatformCapabilities from "../components/PlatformCapabilities";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
           <main className="flex-1">
             <Hero />
             <Skills />
+            <PlatformCapabilities />
             <ProjectsSection />
             <About />
             <TestingSection />

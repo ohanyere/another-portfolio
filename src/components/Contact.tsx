@@ -10,7 +10,7 @@ export default function Contact() {
             Let's work together.
           </h2>
           <p className="mt-4 max-w-xl mx-auto text-gray-600">
-            I'm always excited to connect with new people. Feel free to reach out!
+            Open to backend, platform, DevOps, and cloud-native engineering roles where reliability, automation, and clear systems ownership matter.
           </p>
 
           <div className="mt-8 flex justify-center items-center flex-wrap gap-4 text-sm font-medium text-gray-700">

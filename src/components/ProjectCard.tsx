@@ -1,60 +1,86 @@
-import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
-import { fadeUp } from "../animations/variants";
+import { ExternalLink, Github } from "lucide-react";
 
 export interface ProjectCardProps {
   title: string;
   description: string;
-  tags: string[];
-  link: string;
+  stack: string[];
+  githubUrl?: string;
+  liveUrl?: string;
+  group?: string;
 }
 
 export default function ProjectCard({
   title,
   description,
-  tags,
-  link
+  stack,
+  githubUrl,
+  liveUrl,
+  group,
 }: ProjectCardProps) {
+  const hasGithub = Boolean(githubUrl);
+
   return (
-    <motion.div
-      variants={fadeUp}
-      className="flex flex-col h-full rounded-xl border border-gray-200 bg-white shadow-sm p-4"
-      whileHover={{ scale: 1.02 }}
-      transition={{ type: "spring", stiffness: 200, damping: 18 }}
-    >
-      <div className="flex flex-col flex-1 gap-3">
-        <h3 className="text-lg font-bold text-gray-900">
-          {title}
-        </h3>
+    <article className="flex h-full flex-col rounded-lg border border-gray-200 bg-white p-5">
+      <div className="flex flex-1 flex-col gap-4">
+        {group ? (
+          <p className="text-xs font-bold uppercase tracking-wider text-gray-500">
+            {group}
+          </p>
+        ) : null}
 
-        <p className="text-sm text-gray-600 flex-1">
-          {description}
-        </p>
-
-        <div className="flex flex-wrap gap-2">
-          {tags.map((tag) => (
-            <span
-              key={tag}
-              className="rounded-full bg-blue-400/20 px-3 py-1 text-xs font-medium text-black"
-            >
-              {tag}
-            </span>
-          ))}
+        <div>
+          <h3 className="text-lg font-bold text-gray-900">{title}</h3>
+          <p className="mt-3 text-sm leading-relaxed text-gray-600">
+            {description}
+          </p>
         </div>
 
-        <motion.div
-          whileHover={{ scale: 1.04 }}
-          whileTap={{ scale: 0.96 }}
-          className="mt-auto"
-        >
-          <Link
-            to={`/case-study/${link}`}
-            className="block text-center bg-black text-white font-semibold rounded-lg py-2"
-          >
-            Case Study
-          </Link>
-        </motion.div>
+        <div>
+          <p className="text-xs font-bold uppercase tracking-wider text-gray-500">
+            Stack
+          </p>
+          <div className="mt-2 flex flex-wrap gap-2">
+            {stack.map((item) => (
+              <span
+                key={item}
+                className="rounded-md border border-gray-200 bg-gray-50 px-2.5 py-1 text-xs font-medium text-gray-700"
+              >
+                {item}
+              </span>
+            ))}
+          </div>
+        </div>
+
+        <div className="mt-auto flex flex-col gap-3 sm:flex-row">
+          {hasGithub ? (
+            <a
+              href={githubUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex h-10 items-center justify-center gap-2 rounded-lg bg-black px-4 text-sm font-semibold text-white transition-colors hover:bg-gray-800"
+            >
+              <Github size={16} />
+              GitHub
+            </a>
+          ) : (
+            <span className="inline-flex h-10 items-center justify-center rounded-lg border border-gray-200 bg-gray-50 px-4 text-sm font-semibold text-gray-500">
+              GitHub coming soon
+            </span>
+          )}
+
+          {liveUrl ? (
+            <a
+              href={liveUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex h-10 items-center justify-center gap-2 rounded-lg border border-gray-300 px-4 text-sm font-semibold text-gray-800 transition-colors hover:bg-gray-50"
+            >
+              <ExternalLink size={16} />
+              Live
+            </a>
+          ) : null}
+        </div>
       </div>
-    </motion.div>
+    </article>
   );
 }

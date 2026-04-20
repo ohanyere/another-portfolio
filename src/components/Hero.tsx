@@ -2,44 +2,40 @@ import TextCycle from "../components/TextCycle";
 
 export default function Hero() {
   return (
-    <section className="text-center py-20 sm:py-28 md:py-24 px-4">
-      <div className="flex flex-col items-center gap-6">
-
-        <div className="inline-block rounded-full bg-blue-900/10 px-4 py-2 text-sm font-medium text-black/70">
-          Available for Work
+    <section className="px-4 py-20 sm:py-24 md:py-28">
+      <div className="mx-auto flex max-w-3xl flex-col items-center gap-6 text-center">
+        <div className="inline-block rounded-full border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700">
+          Available for Platform, Backend, and DevOps roles
         </div>
 
-        <div className="text-2xl font-medium text-black">
-          Hello there,
-        </div>
-
-        <div className="flex items-center justify-center text-3xl sm:text-4xl font-black text-black gap-3">
-          <span>I’m</span>
+        <div className="flex flex-col items-center justify-center gap-2">
+          <span className="text-3xl font-black text-black sm:text-4xl">
+            Ohanyere Francis
+          </span>
           <TextCycle />
         </div>
 
-        <p className="max-w-2xl text-base sm:text-lg font-normal text-gray-600">
-          I’m a full-stack developer who builds functional and efficient web applications using React, Next.js, and TypeScript, focusing on clean code and practical solutions.
+        <p className="max-w-2xl text-base font-normal leading-relaxed text-gray-600 sm:text-lg">
+          I build reliable backend systems, deployment workflows, and cloud-native infrastructure with a focus on automation, maintainability, and production readiness.
         </p>
 
-        {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row flex-wrap gap-4 mt-4">
+        <div className="mt-4 flex flex-col flex-wrap gap-4 sm:flex-row">
           <a
-            className="flex items-center justify-center rounded-lg h-12 px-6 bg-black text-white text-base font-bold shadow-sm hover:bg-primary/90 transition-colors"
+            className="flex h-12 items-center justify-center rounded-lg bg-black px-6 text-base font-bold text-white shadow-sm transition-colors hover:bg-gray-800"
             href="#projects"
           >
-            View Projects
+            View Engineering Work
           </a>
 
           <a
-            className="flex items-center justify-center rounded-lg h-12 px-6 bg-gray-200 text-gray-900 text-base font-bold hover:bg-gray-300 transition-colors"
-            href="https://drive.google.com/file/d/1bMIoQDGxYK9bIdJjNx-S4lBnosQfDVVw/view"
+            className="flex h-12 items-center justify-center rounded-lg bg-gray-200 px-6 text-base font-bold text-gray-900 transition-colors hover:bg-gray-300"
+            href="https://drive.google.com/file/d/1jm6042exlyqNX2XgZWQg8BUJx0vdFG0e/view?usp=drive_link"
             target="_blank"
+            rel="noreferrer"
           >
             Download Resume
           </a>
         </div>
-
       </div>
     </section>
   );

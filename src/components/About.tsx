@@ -2,37 +2,26 @@ import FadeInWhenVisible from "./FadeInWhenVisible";
 
 export default function About() {
   return (
-    <section className="py-16 sm:py-20 px-4" id="about">
-      <a href="#about">
-        <div className="max-w-3xl mx-auto text-center">
+    <section className="px-4 py-16 sm:py-20" id="about">
+      <div className="mx-auto max-w-3xl">
+        <FadeInWhenVisible>
+          <h2 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">
+            About
+          </h2>
 
-          <FadeInWhenVisible>
-            <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-gray-900">
-              About Me
-            </h2>
+          <p className="mt-4 text-base leading-relaxed text-gray-600">
+            I am moving my engineering focus toward backend systems, infrastructure automation, and cloud-native delivery. My frontend background helps me understand complete product workflows, but the professional direction I want to emphasize is building reliable services and the deployment paths that support them.
+          </p>
 
-            <p className="mt-4 text-gray-600 text-base leading-relaxed">
-              Hi, I'm a frontend engineer who genuinely enjoys building things that feel good to use.  
-              I love taking ideas from simple sketches or concepts and turning them into clean, functional interfaces.
-            </p>
+          <p className="mt-4 text-base leading-relaxed text-gray-600">
+            I care about the practical engineering work behind production systems: clear API boundaries, repeatable deployments, containerized workloads, CI/CD checks, infrastructure as code, and operational visibility. I am especially interested in environments where code quality, automation, and reliability matter as much as feature delivery.
+          </p>
 
-            <p className="mt-4 text-gray-600 text-base leading-relaxed">
-              I work mainly with 
-              <span className="font-semibold text-gray-900"> React</span>, 
-              <span className="font-semibold text-gray-900"> TypeScript</span>, and 
-              <span className="font-semibold text-gray-900"> Next.js</span>, 
-              and I care a lot about writing code that's easy to understand, maintain, and scale.  
-              Good UI/UX matters to me, so I try to make every interaction feel smooth and intentional.
-            </p>
-
-            <p className="mt-4 text-gray-600 text-base leading-relaxed">
-              Lately, I’ve been exploring how AI can enhance everyday user experiences whether that’s making things
-              faster, smarter, or more helpful in the background. It’s exciting to see how much potential there is.
-            </p>
-          </FadeInWhenVisible>
-
-        </div>
-      </a>
+          <p className="mt-4 text-base leading-relaxed text-gray-600">
+            I am continuing to deepen my platform and DevOps skill set across Docker image building, Kubernetes and EKS workflows, Terraform provisioning, deployment validation, and observability fundamentals while keeping a strong bias toward honest, maintainable engineering.
+          </p>
+        </FadeInWhenVisible>
+      </div>
     </section>
   );
 }
