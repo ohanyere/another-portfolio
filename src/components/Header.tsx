@@ -21,14 +21,17 @@ export default function Header() {
 
       <div className="hidden flex-1 items-center justify-end gap-8 md:flex">
         <nav className="flex items-center gap-9 text-black">
-          <a className="text-sm font-medium hover:text-gray-500" href="#capabilities">
-            Capabilities
+          <a className="text-sm font-medium hover:text-gray-500" href="#positioning">
+            Positioning
           </a>
           <a className="text-sm font-medium hover:text-gray-500" href="#projects">
-            Work
+            Projects
           </a>
-          <a className="text-sm font-medium hover:text-gray-500" href="#about">
-            About
+          <a className="text-sm font-medium hover:text-gray-500" href="#evidence">
+            Evidence
+          </a>
+          <a className="text-sm font-medium hover:text-gray-500" href="#skills">
+            Skills
           </a>
           <a className="text-sm font-medium hover:text-gray-500" href="#contact">
             Contact

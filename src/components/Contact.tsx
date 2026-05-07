@@ -7,10 +7,10 @@ export default function Contact() {
       <FadeInWhenVisible>
         <>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-gray-900">
-            Let's work together.
+            Contact / Resume
           </h2>
           <p className="mt-4 max-w-xl mx-auto text-gray-600">
-            Open to backend, platform, DevOps, and cloud-native engineering roles where reliability, automation, and clear systems ownership matter.
+            Open to platform engineering, DevOps, and SRE-oriented roles with a focus on reliable systems, delivery safety, and operational readiness.
           </p>
 
           <div className="mt-8 flex justify-center items-center flex-wrap gap-4 text-sm font-medium text-gray-700">
@@ -45,10 +45,11 @@ export default function Contact() {
 
           <div className="mt-10">
             <a
-              href="mailto:ohanyerefrancis395@gmail.com"
+              href="/resume/ohanyere-francis-platform-resume.pdf"
+              download
               className="inline-block rounded-lg h-12 px-8 bg-black text-white text-base font-bold shadow-lg hover:bg-primary/90 transition-colors leading-[48px]"
             >
-              Contact Me
+              Open Resume
             </a>
           </div>
         </>

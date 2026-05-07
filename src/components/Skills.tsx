@@ -1,4 +1,4 @@
-import { Cloud, Container, GitBranch, MonitorCheck, Server, Workflow } from "lucide-react";
+import { Boxes, CloudCog, Gauge, GitBranch, Server } from "lucide-react";
 import type { ReactElement } from "react";
 
 type SkillGroup = {
@@ -9,34 +9,29 @@ type SkillGroup = {
 
 const skillGroups: SkillGroup[] = [
   {
-    icon: <Cloud size={24} />,
-    title: "Infrastructure & Cloud",
-    items: ["AWS direction", "cloud deployment models", "environment configuration", "secrets-aware workflows"],
-  },
-  {
-    icon: <Container size={24} />,
-    title: "Containers & Orchestration",
-    items: ["Docker image building", "containerized services", "Kubernetes fundamentals", "EKS-oriented deployment patterns"],
-  },
-  {
-    icon: <Server size={24} />,
-    title: "Backend Systems",
-    items: ["API design", "authentication flows", "data persistence", "integration with third-party services"],
+    icon: <Boxes size={24} />,
+    title: "Kubernetes / EKS",
+    items: ["workloads", "cluster operations", "namespace workflows", "failure-aware deployment patterns"],
   },
   {
     icon: <GitBranch size={24} />,
-    title: "CI/CD & DevOps",
-    items: ["pipeline checks", "build automation", "deployment validation", "release workflow awareness"],
+    title: "CI/CD / GitOps",
+    items: ["GitHub Actions", "ArgoCD", "Argo Rollouts", "plan-only and validation-first workflows"],
   },
   {
-    icon: <MonitorCheck size={24} />,
-    title: "Observability & Reliability",
-    items: ["logging basics", "health checks", "failure-aware design", "operational debugging mindset"],
+    icon: <CloudCog size={24} />,
+    title: "Terraform / IaC",
+    items: ["Terraform planning", "reviewable infrastructure changes", "cost-aware workflows", "environment comparisons"],
   },
   {
-    icon: <Workflow size={24} />,
-    title: "Frontend as Supporting Skill",
-    items: ["React", "TypeScript", "Next.js", "testing user-facing flows"],
+    icon: <Gauge size={24} />,
+    title: "Observability",
+    items: ["cluster metrics", "pressure detection", "health-aware rollout checks", "operational validation"],
+  },
+  {
+    icon: <Server size={24} />,
+    title: "Go / Backend",
+    items: ["Go services", "CLI workflows", "HTTP APIs", "tooling for platform operations"],
   },
 ];
 
@@ -68,14 +63,11 @@ export default function Skills() {
       <div className="mx-auto max-w-5xl">
         <div className="mb-10 max-w-3xl">
           <p className="text-sm font-bold uppercase tracking-wider text-gray-500">
-            Technical Focus
+            Skills
           </p>
           <h2 className="mt-2 text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">
-            Backend, infrastructure, delivery, and reliability
+            Tools and systems aligned to platform engineering work
           </h2>
-          <p className="mt-3 text-base leading-relaxed text-gray-600">
-            The site now presents frontend experience as useful context, while the primary story is platform-minded engineering: systems, automation, deployment, and operational readiness.
-          </p>
         </div>
 
         <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
