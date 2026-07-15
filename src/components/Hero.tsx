@@ -25,14 +25,7 @@ export default function Hero() {
             View Platform Work
           </a>
 
-          <a
-            className="flex h-12 items-center justify-center rounded-lg bg-gray-200 px-6 text-base font-bold text-gray-900 transition-colors hover:bg-gray-300"
-            href="https://github.com/ohanyere"
-            target="_blank"
-            rel="noreferrer"
-          >
-            GitHub
-          </a>
+          
 
           <a
             className="flex h-12 items-center justify-center rounded-lg bg-gray-200 px-6 text-base font-bold text-gray-900 transition-colors hover:bg-gray-300"
