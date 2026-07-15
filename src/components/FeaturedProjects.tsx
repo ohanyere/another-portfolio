@@ -20,7 +20,7 @@ export default function FeaturedProjects() {
               Featured Projects
             </p>
             <h2 className="mt-2 text-2xl font-bold leading-tight tracking-tight text-gray-900 sm:text-3xl">
-              Platform engineering work with failure drills and validation built in
+              Platform products and automation built for delivery standardization, governance, and self-service
             </h2>
           </div>
         </FadeInWhenVisible>
@@ -39,7 +39,7 @@ export default function FeaturedProjects() {
 
                   <div>
                     <p className="text-xs font-bold uppercase tracking-wider text-gray-500">
-                      Stack
+                      Platform Focus
                     </p>
                     <div className="mt-2 flex flex-wrap gap-2">
                       {project.stack.map((item) => (
@@ -55,7 +55,7 @@ export default function FeaturedProjects() {
 
                   <div>
                     <p className="text-xs font-bold uppercase tracking-wider text-gray-500">
-                      Key Result
+                      Platform Outcome
                     </p>
                     <p className="mt-2 text-sm leading-relaxed text-gray-600">
                       {project.keyResult}

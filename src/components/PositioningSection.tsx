@@ -4,25 +4,25 @@ const positioningCards = [
   {
     title: "What I build",
     items: [
-      "Kubernetes-focused tooling and delivery workflows.",
-      "Infrastructure guardrails that make deployment and cost decisions safer.",
-      "Operational systems with CLI, API, automation, and recovery thinking built in.",
+      "Platform products that turn delivery, infrastructure, and governance into supported developer workflows.",
+      "Internal Developer Platforms, platform APIs, Kubernetes automation, and self-service tooling for engineering teams.",
+      "Software that extends delivery systems and Kubernetes instead of exposing raw platform complexity to every team.",
     ],
   },
   {
-    title: "What I optimize for",
+    title: "What the platform enables",
     items: [
-      "Reliability under failure, not just happy-path demos.",
-      "Repeatable CI/CD workflows with clear validation steps.",
-      "Operational visibility that helps teams detect, decide, and recover quickly.",
+      "Standardized software delivery through Golden Paths and reusable release workflows.",
+      "Self-service infrastructure requests with auditability, policy, and review built into the flow.",
+      "Faster onboarding and lower developer cognitive load through platform-owned automation.",
     ],
   },
   {
-    title: "What I can discuss in interviews",
+    title: "What I focus on operationally",
     items: [
-      "Cluster pressure detection and recommendation workflows in Go and Kubernetes.",
-      "EKS backup and restore drills using Velero and S3.",
-      "Terraform cost guardrails, canary rollouts, rollback validation, and runbook design.",
+      "Platform reliability, release safety, and recovery-oriented workflow design.",
+      "Governance and security embedded in the supported path rather than added after delivery.",
+      "Operational visibility that helps teams detect, decide, and act quickly during change.",
     ],
   },
 ];
@@ -37,7 +37,7 @@ export default function PositioningSection() {
               Platform Engineering Positioning
             </p>
             <h2 className="mt-2 text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">
-              Built around systems, failure handling, and operational proof
+              Built around platform products, developer workflows, and operational ownership
             </h2>
           </div>
         </FadeInWhenVisible>

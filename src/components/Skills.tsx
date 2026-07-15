@@ -10,28 +10,28 @@ type SkillGroup = {
 const skillGroups: SkillGroup[] = [
   {
     icon: <Boxes size={24} />,
-    title: "Kubernetes / EKS",
-    items: ["workloads", "cluster operations", "namespace workflows", "failure-aware deployment patterns"],
+    title: "Platform Products",
+    items: ["Internal Developer Platforms", "service catalogs", "platform APIs", "developer-facing workflow design"],
   },
   {
     icon: <GitBranch size={24} />,
-    title: "CI/CD / GitOps",
-    items: ["GitHub Actions", "ArgoCD", "Argo Rollouts", "plan-only and validation-first workflows"],
+    title: "Software Delivery",
+    items: ["Golden Paths", "GitOps automation", "release promotion flows", "rollback-aware delivery workflows"],
   },
   {
     icon: <CloudCog size={24} />,
-    title: "Terraform / IaC",
-    items: ["Terraform planning", "reviewable infrastructure changes", "cost-aware workflows", "environment comparisons"],
+    title: "Infrastructure Self-Service",
+    items: ["secure provisioning paths", "reviewable infrastructure requests", "tenant resource automation", "platform-owned workflows"],
   },
   {
     icon: <Gauge size={24} />,
-    title: "Observability",
-    items: ["cluster metrics", "pressure detection", "health-aware rollout checks", "operational validation"],
+    title: "Platform Governance",
+    items: ["policy-aware workflows", "cost guardrails", "audit-ready changes", "secure delivery controls"],
   },
   {
     icon: <Server size={24} />,
-    title: "Go / Backend",
-    items: ["Go services", "CLI workflows", "HTTP APIs", "tooling for platform operations"],
+    title: "Platform Tooling",
+    items: ["Kubernetes controllers and operators", "developer experience automation", "platform reliability", "cloud platform workflows"],
   },
 ];
 
@@ -66,7 +66,7 @@ export default function Skills() {
             Skills
           </p>
           <h2 className="mt-2 text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">
-            Tools and systems aligned to platform engineering work
+            Capabilities organized around platform product outcomes
           </h2>
         </div>
 

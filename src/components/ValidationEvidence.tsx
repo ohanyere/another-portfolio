@@ -2,20 +2,20 @@ import FadeInWhenVisible from "./FadeInWhenVisible";
 
 const evidenceItems = [
   {
-    title: "DR recovery success",
-    text: "Namespace deletion was used as the failure drill, then workloads were restored successfully with zero observed data loss.",
+    title: "Golden Path service creation",
+    text: "Platform-owned service creation workflows standardize onboarding so new services start with approved delivery paths instead of bespoke setup work.",
   },
   {
-    title: "CI cost guardrail enforcement",
-    text: "Plan-only CI surfaced infrastructure cost deltas and blocked pull requests when thresholds were exceeded.",
+    title: "Self-service infrastructure requests",
+    text: "Infrastructure access is exposed through reviewable workflows that preserve auditability, platform labels, and secure provisioning controls.",
   },
   {
-    title: "Rollout rollback success",
-    text: "Canary deployment flow was exercised under failure conditions and validated rollback to the stable release.",
+    title: "Kubernetes tenant automation",
+    text: "A TeamEnvironment Operator reconciles tenant resources like namespaces, RBAC, quotas, service accounts, and network policies from Custom Resources.",
   },
   {
-    title: "Cluster pressure detection",
-    text: "Capacity analysis identified CPU, memory, and pod pressure conditions and returned operator-facing recommendations.",
+    title: "Release safety and governance",
+    text: "Promotion, rollback, cost controls, and policy-aware workflows keep delivery automation fast without giving up reliability or governance.",
   },
 ];
 
@@ -29,7 +29,7 @@ export default function ValidationEvidence() {
               Validation Evidence
             </p>
             <h2 className="mt-2 text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">
-              Proof points tied to failure handling and operational outcomes
+              Proof points tied to platform automation and developer workflow outcomes
             </h2>
           </div>
         </FadeInWhenVisible>

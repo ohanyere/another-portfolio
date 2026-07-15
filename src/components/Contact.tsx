@@ -10,7 +10,7 @@ export default function Contact() {
             Contact / Resume
           </h2>
           <p className="mt-4 max-w-xl mx-auto text-gray-600">
-            Open to platform engineering, DevOps, and SRE-oriented roles with a focus on reliable systems, delivery safety, and operational readiness.
+            Open to platform engineering roles focused on platform products, developer self-service, delivery automation, and reliable cloud-native workflows.
           </p>
 
           <div className="mt-8 flex justify-center items-center flex-wrap gap-4 text-sm font-medium text-gray-700">
