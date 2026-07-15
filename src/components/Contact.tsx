@@ -45,8 +45,8 @@ export default function Contact() {
 
           <div className="mt-10">
             <a
-              href="/resume/ohanyere-francis-platform-resume.pdf"
-              download
+              href="/resume/Ohanyere-Francis-Platform-Engineer-Resume.pdf"
+              download="Ohanyere-Francis-Platform-Engineer-Resume.pdf"
               className="inline-block rounded-lg h-12 px-8 bg-black text-white text-base font-bold shadow-lg hover:bg-primary/90 transition-colors leading-[48px]"
             >
               Open Resume

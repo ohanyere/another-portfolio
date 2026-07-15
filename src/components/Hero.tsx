@@ -36,7 +36,7 @@ export default function Hero() {
 
           <a
             className="flex h-12 items-center justify-center rounded-lg bg-gray-200 px-6 text-base font-bold text-gray-900 transition-colors hover:bg-gray-300"
-            href="/resume/ohanyere-francis-platform-resume.pdf"
+            href="/resume/Ohanyere-Francis-Platform-Engineer-Resume.pdf"
             download="Ohanyere-Francis-Platform-Engineer-Resume.pdf"
           >
             Download Resume
