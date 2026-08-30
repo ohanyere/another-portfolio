@@ -6,9 +6,9 @@ import OutcomeBlock from "../../components/project-detail/OutcomeBlock";
 import RunbookBlock from "../../components/project-detail/RunbookBlock";
 import { getProjectBySlug } from "../../data/projects";
 
-const project = getProjectBySlug("progressive-delivery");
+const project = getProjectBySlug("kubernetes-tenant-platform");
 
-export default function ProgressiveDeliveryPage() {
+export default function KubernetesTenantPlatformPage() {
   if (!project) return null;
 
   return (

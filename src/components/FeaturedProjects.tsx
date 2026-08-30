@@ -5,7 +5,7 @@ import FadeInWhenVisible from "./FadeInWhenVisible";
 
 const projectPaths: Record<string, string> = {
   "cluster-meter": "/projects/cluster-meter",
-  "eks-dr": "/projects/eks-dr",
+  "kubernetes-tenant-platform": "/projects/kubernetes-tenant-platform",
   finops: "/projects/finops",
   "progressive-delivery": "/projects/progressive-delivery",
 };
@@ -63,15 +63,21 @@ export default function FeaturedProjects() {
                   </div>
 
                   <div className="mt-auto flex flex-col gap-3 sm:flex-row">
-                    <a
-                      href={project.githubUrl}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="inline-flex h-10 items-center justify-center gap-2 rounded-lg bg-black px-4 text-sm font-semibold text-white transition-colors hover:bg-gray-800"
-                    >
-                      <Github size={16} />
-                      GitHub
-                    </a>
+                    {project.githubUrl ? (
+                      <a
+                        href={project.githubUrl}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="inline-flex h-10 items-center justify-center gap-2 rounded-lg bg-black px-4 text-sm font-semibold text-white transition-colors hover:bg-gray-800"
+                      >
+                        <Github size={16} />
+                        GitHub
+                      </a>
+                    ) : (
+                      <span className="inline-flex h-10 items-center justify-center rounded-lg border border-gray-200 bg-gray-50 px-4 text-sm font-semibold text-gray-500">
+                        Source not currently public
+                      </span>
+                    )}
 
                     <Link
                       to={projectPaths[project.slug]}

@@ -3,6 +3,7 @@ import Home from "./pages/Home";
 import ClusterMeterPage from "./pages/projects/ClusterMeterPage";
 import EksDrPage from "./pages/projects/EksDrPage";
 import FinopsGuardrailPage from "./pages/projects/FinopsGuardrailPage";
+import KubernetesTenantPlatformPage from "./pages/projects/KubernetesTenantPlatformPage";
 import ProgressiveDeliveryPage from "./pages/projects/ProgressiveDeliveryPage";
 
 export default function AnimatedRoutes() {
@@ -10,6 +11,7 @@ export default function AnimatedRoutes() {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/projects/cluster-meter" element={<ClusterMeterPage />} />
+      <Route path="/projects/kubernetes-tenant-platform" element={<KubernetesTenantPlatformPage />} />
       <Route path="/projects/eks-dr" element={<EksDrPage />} />
       <Route path="/projects/finops" element={<FinopsGuardrailPage />} />
       <Route path="/projects/progressive-delivery" element={<ProgressiveDeliveryPage />} />
