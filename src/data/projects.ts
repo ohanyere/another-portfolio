@@ -10,6 +10,7 @@ export type ProjectRecord = {
   evidence: string[];
   result: string;
   githubUrl?: string;
+  liveDemoUrl?: string;
   keyResult: string;
   decisions?: string[];
   tradeOffs?: string[];
@@ -101,6 +102,7 @@ export const projects: ProjectRecord[] = [
     result:
       "Built a self-service tenant platform that treats Kubernetes tenancy as a governed control-plane problem: developers declare intent once, while the platform owns lifecycle, safety, readiness, and historical accountability.",
     githubUrl: "https://github.com/ohanyere/Kubernetes-Tenant-Platform",
+    liveDemoUrl: "https://web-seven-orcin-njwg81ie9g.vercel.app",
     keyResult: "Turned Kubernetes tenancy into a platform product with GitOps-owned intent, controller-owned runtime convergence, normalized readiness, and durable audit history.",
     decisions: [
       "Tenant is the product contract because developers request a team and environment boundary, not a bundle of low-level Namespace, quota, RBAC, and NetworkPolicy primitives.",

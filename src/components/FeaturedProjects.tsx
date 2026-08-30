@@ -62,7 +62,7 @@ export default function FeaturedProjects() {
                     </p>
                   </div>
 
-                  <div className="mt-auto flex flex-col gap-3 sm:flex-row">
+                  <div className="mt-auto flex flex-col gap-3 sm:flex-row sm:flex-wrap">
                     {project.githubUrl ? (
                       <a
                         href={project.githubUrl}
@@ -77,6 +77,18 @@ export default function FeaturedProjects() {
                       <span className="inline-flex h-10 items-center justify-center rounded-lg border border-gray-200 bg-gray-50 px-4 text-sm font-semibold text-gray-500">
                         Source not currently public
                       </span>
+                    )}
+
+                    {project.liveDemoUrl && (
+                      <a
+                        href={project.liveDemoUrl}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="inline-flex h-10 items-center justify-center gap-2 rounded-lg border border-gray-300 px-4 text-sm font-semibold text-gray-800 transition-colors hover:bg-gray-50"
+                      >
+                        <ExternalLink size={16} />
+                        Live Demo
+                      </a>
                     )}
 
                     <Link
